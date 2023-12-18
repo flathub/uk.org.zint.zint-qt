@@ -53,12 +53,13 @@
   
   <launchable type="desktop-id">uk.org.zint.zint-qt.desktop</launchable>
   
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   
   <releases>
-    <release version="2.11.0" date="2022-05-25" />
-    <release version="2.10.0" date="2021-08-14" />
-    <release version="2.9.1" date="2020-08-04" />
+    <release version="2.13.0" date="2023-12-18"/>
+    <release version="2.11.0" date="2022-05-25"/>
+    <release version="2.10.0" date="2021-08-14"/>
+    <release version="2.9.1" date="2020-08-04"/>
   </releases>
   
 </component>
