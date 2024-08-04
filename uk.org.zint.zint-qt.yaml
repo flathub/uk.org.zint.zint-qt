@@ -1,26 +1,29 @@
 app-id: uk.org.zint.zint-qt
 runtime: org.kde.Platform
-runtime-version: '6.3'
+runtime-version: '6.7'
 sdk: org.kde.Sdk
 command: zint-qt
 finish-args:
   - "--share=ipc"
   - "--socket=cups"
   - "--socket=wayland"
+  - "--socket=fallback-x11"
   - "--device=dri"
   - "--filesystem=home:ro"
   - "--filesystem=xdg-documents:rw"
 modules:
   - name: zint-qt
     buildsystem: cmake-ninja
+    config-opts:
+      - -DZINT_QT6=ON
     build-commands:
       - install -D uk.org.zint.zint-qt.appdata.xml /app/share/metainfo/uk.org.zint.zint-qt.appdata.xml
       - install -Dm644 zint-qt-flatpak.desktop /app/share/applications/uk.org.zint.zint-qt.desktop
       - install -Dm644 frontend_qt/images/scalable/zint-qt.svg /app/share/icons/hicolor/scalable/apps/uk.org.zint.zint-qt.svg
     sources:
       - type: archive
-        url: https://download.sourceforge.net/project/zint/zint/2.11.0/zint-2.11.0-src.tar.gz
-        sha256: 4e9d4d7dbcf41bfd63b70eca296c564f7c1a9b9d1c70c60e820dbe23f216aa09
+        url: https://download.sourceforge.net/project/zint/zint/2.13.0/zint-2.13.0-src.tar.gz
+        sha256: 0e957cf17c3eeb4ad619b2890d666d12a5c7adc7e7c39c207739b0f4f5c65fa2
         x-checker-data:
           type: anitya
           project-id: 13683
@@ -29,7 +32,5 @@ modules:
         path: uk.org.zint.zint-qt.appdata.xml
       - type: file
         path: zint-qt-flatpak.desktop
-      - type: patch
-        path: qt6.patch
       - type: patch
         path: clipboard.patch
