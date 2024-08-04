@@ -1,9 +1,8 @@
-diff -c -r a/frontend_qt/mainwindow.cpp b/frontend_qt/mainwindow.cpp
-*** a/frontend_qt/mainwindow.cpp	2022-05-24 22:08:51.000000000 +0200
---- b/frontend_qt/mainwindow.cpp	2022-06-25 21:18:23.974615664 +0200
+*** a/frontend_qt/mainwindow.cpp	2023-12-18 10:44:47.000000000 +0100
+--- b/frontend_qt/mainwindow.cpp	2024-08-04 15:53:49.125638832 +0200
 ***************
-*** 27,32 ****
---- 27,33 ----
+*** 28,33 ****
+--- 28,34 ----
   #include <QClipboard>
   #include <QMimeData>
   #include <QColor>
@@ -12,7 +11,7 @@ diff -c -r a/frontend_qt/mainwindow.cpp b/frontend_qt/mainwindow.cpp
   #include <QShortcut>
   #include <QMenu>
 ***************
-*** 2636,2644 ****
+*** 3507,3516 ****
       m_copyTIFShortcut->setEnabled(enabled);
   }
   
@@ -22,16 +21,16 @@ diff -c -r a/frontend_qt/mainwindow.cpp b/frontend_qt/mainwindow.cpp
   
       if (!m_bc.bc.save_to_file(filename)) {
           return;
---- 2637,2647 ----
+      }
+--- 3508,3518 ----
       m_copyTIFShortcut->setEnabled(enabled);
   }
   
 ! void MainWindow::copy_to_clipboard(const QString &in_filename, const QString& name, const char *mimeType)
   {
       QClipboard *clipboard = QGuiApplication::clipboard();
-+     
-+     auto filename = QString::fromLocal8Bit(qgetenv("XDG_RUNTIME_DIR")).append("/app/uk.org.zint.zint-qt/").append(in_filename);
   
++     auto filename = QString::fromLocal8Bit(qgetenv("XDG_RUNTIME_DIR")).append("/app/uk.org.zint.zint-qt/").append(in_filename);
       if (!m_bc.bc.save_to_file(filename)) {
           return;
-
+      }
