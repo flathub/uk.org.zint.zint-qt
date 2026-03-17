@@ -5,65 +5,64 @@
   <summary>Barcode generator</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
+  <url type="homepage">https://zint.org.uk</url>
+  <url type="bugtracker">https://sourceforge.net/p/zint/tickets</url>
+  <url type="vcs-browser">https://sourceforge.net/p/zint/code/</url>
+  <developer id="uk.org.zint">
+    <name>Zint Contributors</name>
+  </developer>
+  <launchable type="desktop-id">uk.org.zint.zint-qt.desktop</launchable>
+  <content_rating type="oars-1.1"/>
   <description>
-    <p>The Zint project aims to provide a complete barcode generating solution. It is hoped that Zint provides a solution which is flexible enough for professional users while at the same time takes care of as much of the processing as possible to allow easy translation from input data to barcode image.</p>
-    <p>Zint is currently able to encode data in over 50 barcode symbologies (types of barcode), for each of which it is possible to translate that data from either Unicode (UTF-8) or a raw 8-bit data stream. The image can be rendered as either a Portable Network Graphic (PNG) image, Windows Bitmap (BMP), Graphics Interchange Format (GIF), ZSoft Paintbrush image (PCX), as Encapsulated Post Script (EPS) or as a Scalable Vector Graphic (SVG). Many options are available for setting the characteristics of the output image including the size and colour of the image, the amount of error correction used in the symbol and, in the case of raster images, the orientation of the image.</p>
+    <p>The Zint project aims to provide a complete barcode generating solution.
+      It is hoped that Zint provides a solution which is flexible enough for
+      professional users while at the same time takes care of as much of the
+      processing as possible to allow easy translation from input data to barcode
+      image.</p>
+    <p>Zint is currently able to encode data in over 50 barcode symbologies
+      (types of barcode), for each of which it is possible to translate that data
+      from either Unicode (UTF-8) or a raw 8-bit data stream. The image can be
+      rendered as either a Portable Network Graphic (PNG) image, Windows Bitmap
+      (BMP), Graphics Interchange Format (GIF), ZSoft Paintbrush image (PCX),
+      as Encapsulated Post Script (EPS) or as a Scalable Vector Graphic (SVG).
+      Many options are available for setting the characteristics of the output
+      image including the size and colour of the image, the amount of error
+      correction used in the symbol and, in the case of raster images, the
+      orientation of the image.</p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>
-           https://a.fsdn.com/con/app/proj/zint/screenshots/2.13.0_ss_1-dcab5b50.png
-      </image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS91ay9vcmcvemludC56aW50LXF0LzczNjQ0NWVlZDA4ZjgyNTJmODIwNjkyYmI4OThjZDI3L3NjcmVlbnNob3RzL2ltYWdlLTFfb3JpZy5wbmc</image>
       <caption>Create barcodes from any data</caption>
     </screenshot>
     <screenshot>
-      <image>
-           https://a.fsdn.com/con/app/proj/zint/screenshots/2.13.0_ss_2-f4a37490.png
-      </image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS91ay9vcmcvemludC56aW50LXF0LzczNjQ0NWVlZDA4ZjgyNTJmODIwNjkyYmI4OThjZDI3L3NjcmVlbnNob3RzL2ltYWdlLTJfb3JpZy5wbmc</image>
       <caption>Add binding bars or boundary boxes</caption>
     </screenshot>
     <screenshot>
-      <image>
-           https://a.fsdn.com/con/app/proj/zint/screenshots/2.13.0_ss_3-0eec1e60.png
-      </image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS91ay9vcmcvemludC56aW50LXF0LzczNjQ0NWVlZDA4ZjgyNTJmODIwNjkyYmI4OThjZDI3L3NjcmVlbnNob3RzL2ltYWdlLTNfb3JpZy5wbmc</image>
       <caption>Create composite symbols from GS1 data</caption>
     </screenshot>
     <screenshot>
-      <image>
-           https://a.fsdn.com/con/app/proj/zint/screenshots/2.13.0_ss_4-236821cc.png
-      </image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS91ay9vcmcvemludC56aW50LXF0LzczNjQ0NWVlZDA4ZjgyNTJmODIwNjkyYmI4OThjZDI3L3NjcmVlbnNob3RzL2ltYWdlLTRfb3JpZy5wbmc</image>
       <caption>Create matrix symbols and specify symbol size</caption>
     </screenshot>
     <screenshot>
-      <image>
-           https://a.fsdn.com/con/app/proj/zint/screenshots/2.13.0_ss_5-389e45e4.png
-      </image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS91ay9vcmcvemludC56aW50LXF0LzczNjQ0NWVlZDA4ZjgyNTJmODIwNjkyYmI4OThjZDI3L3NjcmVlbnNob3RzL2ltYWdlLTVfb3JpZy5wbmc</image>
       <caption>Generate or import sequences of data to create multiple symbols</caption>
     </screenshot>
     <screenshot>
-      <image>
-           https://a.fsdn.com/con/app/proj/zint/screenshots/2.12.0_ss_6.png
-      </image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS91ay9vcmcvemludC56aW50LXF0LzczNjQ0NWVlZDA4ZjgyNTJmODIwNjkyYmI4OThjZDI3L3NjcmVlbnNob3RzL2ltYWdlLTZfb3JpZy5wbmc</image>
       <caption>Import larger chunks of text for encoding in a single symbol</caption>
     </screenshot>
   </screenshots>
   
-  <url type="bugtracker">https://sourceforge.net/p/zint/tickets/</url>
-  <url type="homepage">https://zint.org.uk/</url>
-
-  <developer id="uk.org.zint">
-    <name>Zint Contributors</name>
-  </developer>
-
-  <launchable type="desktop-id">uk.org.zint.zint-qt.desktop</launchable>
-  
-  <content_rating type="oars-1.1" />
-  
   <releases>
-    <release version="2.13.0" date="2023-12-18" />
-    <release version="2.11.0" date="2022-05-25" />
-    <release version="2.10.0" date="2021-08-14" />
-    <release version="2.9.1" date="2020-08-04" />
+    <release version="2.16.0" date="2025-12-19"/>
+    <release version="2.13.0" date="2023-12-18"/>
+    <release version="2.11.0" date="2022-05-25"/>
+    <release version="2.10.0" date="2021-08-14"/>
+    <release version="2.9.1" date="2020-08-04"/>
   </releases>
   
 </component>
